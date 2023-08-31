@@ -1,0 +1,16 @@
+@import '../../styles/Variables.scss';
+
+.main {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  transform: translateZ(0);
+}
+
+.container {
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+

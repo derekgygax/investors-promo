@@ -1,0 +1,12 @@
+cache/
+data/local/
+data/production/
+data/staging/
+build/
+files/local/
+files/production/
+files/staging/
+logs/
+node_modules/
+package-lock.json
+.DS_Store

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Playfair+Display:700,900|Roboto:300,400');
+@import '../../../../styles/Variables.scss';
+    
+.barLong {
+    width: 0px;
+    height: 1px;
+    background: $font-light;
+    margin: 30px 0;
+    transition: width 1s;
+
+    &.fullLong {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.contactButtonDark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 2px solid $dark-blue;
+    border-radius: 40px;
+    background-color: $dark-blue;
+    transition-property: all;
+    transition-duration: 300ms;
+    font-family: "Open Sans";
+    color: #fff;
+    line-height: 1;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.2, color 0.2;
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 50px;
+
+    &:hover {
+        background-color: $white;
+        color: $dark-blue;
+
+        .rightArrowIcon {
+            background-image: url('@assets/arrow-point-to-right-dark-blue.png') !important
+        }
+    }
+}
+
+.dropDown {
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.question {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: $font-dark !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center !important;
+    margin-right: 5px;
+    margin-bottom: -5px;
+    @media screen and ( max-width: 600px ) {
+        font-size: 14px;
+    }
+}
+
+.rotatedIcon {
+    width: 16px;
+    margin: 5px 0 0 10px !important;
+    cursor: pointer;
+    @media screen and ( max-width: 600px ) {
+        width: 12px;
+    }
+}
+
+.text {
+    display: block;
+    flex-grow: 1;
+}
+
+.visible {
+    color: $font-dark !important;
+    font-family: 'Open Sans' !important;
+}
+
+.visible div {
+    color: $font-dark !important;
+    font-family: 'Open Sans' !important;
+}

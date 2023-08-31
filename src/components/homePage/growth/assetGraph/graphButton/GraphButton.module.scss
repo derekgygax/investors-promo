@@ -1,0 +1,63 @@
+@import '../../../../../styles/Variables.scss';
+    
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.buttonContainer {
+    background: $electric-blue;
+    display: inline-block;
+    padding: 12px 15px 10px 15px;
+    border: 2px solid $electric-blue;
+    cursor: pointer;
+    width: 180px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.5s, color 0.5s;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    @media screen and ( max-width: $container-halves-phone ) {
+        font-size: 14px;
+    }
+
+    &:focus {
+        outline: 0
+    }
+
+    &.dark {
+        background: white;
+        border-color: $electric-blue;
+        color: $electric-blue;
+
+        .rightArrowIcon {
+            background-image: url("@assets/arrow-point-to-right-blue.png") !important;
+        }
+
+        &:hover {
+            background-color: $red;
+            border-color: $red;
+            color: $white;
+
+            .rightArrowIcon {
+                background-image: url("@assets/arrow-point-to-right-white.png") !important;
+            }
+        }
+    }
+}
+
+.text {
+    display: block;
+    flex-grow: 1;
+    text-align: center !important;
+    margin: 0 auto;
+    width: 100%;
+}

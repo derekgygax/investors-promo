@@ -1,0 +1,22 @@
+import { CLIENT_EXPERIENCE_CONFIG } from "./clientExperience";
+import { DISCLOSURES_CONFIG } from "./discolsures";
+import { PRIVACY_POLICY_CONFIG } from "./privacyPolicy";
+import { OUR_PROCESS_CONFIG } from "./ourProcess";
+import { WHY_EQUITIES_CONFIG } from "./whyEquities";
+import { MENU_LINKS } from './MenuLinks';
+import { FAQ_CONFIG } from "./faq";
+import { RETIREMENT_CALCULATOR_INFO_CONFIG } from "./retirementCalculatorInfo";
+
+export const DISCOVER_PAGE_CONFIG = {
+  DATA: {
+    [CLIENT_EXPERIENCE_CONFIG.id]: CLIENT_EXPERIENCE_CONFIG,
+    [WHY_EQUITIES_CONFIG.id]: WHY_EQUITIES_CONFIG,
+    [OUR_PROCESS_CONFIG.id]: OUR_PROCESS_CONFIG,
+    [FAQ_CONFIG.id]: FAQ_CONFIG,
+    [RETIREMENT_CALCULATOR_INFO_CONFIG.id]: RETIREMENT_CALCULATOR_INFO_CONFIG,
+    [DISCLOSURES_CONFIG.id]: DISCLOSURES_CONFIG,
+    [PRIVACY_POLICY_CONFIG.id]: PRIVACY_POLICY_CONFIG,
+  },
+  MENU_LINKS: MENU_LINKS,
+  CATEGORY_DEFAULT: CLIENT_EXPERIENCE_CONFIG.id,
+};

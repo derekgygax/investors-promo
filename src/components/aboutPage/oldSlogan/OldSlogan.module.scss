@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import '../../../styles/Variables.scss';
+
+.main {
+    background-color: $off-white;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 70px 0;
+    // background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(2,36,74,1) 30%, rgba(24,130,212,1) 100%)
+    // box-shadow: inset 0px 0px 6px 0px rgba(17,17,17,0.57)
+    @media screen and ( max-width: 600px ) {
+        padding: 50px 0;
+    }
+}
+
+.bar {
+    width: 60px;
+    height: 2px;
+    background: $red;
+    margin: 30px 0;
+    @media screen and ( max-width: $container-halves-phone) {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+.button {
+    background: $electric-blue;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    width: 220px !important;
+    display: block;
+    border-radius: 30px;
+    @media screen and ( max-width: 600px ) {
+        margin-top: 5px;
+        margin-right: 40px;
+        display: inline-block;
+    }
+
+    &:hover {
+        border: 1px solid $electric-blue;
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    @media screen and ( max-width: 1050px ) {
+        margin-top: 30px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 40px;
+    @media (max-width: 1050px) {
+        display: block;
+    }
+    @media screen and ( max-width: 680px ) {
+        padding: 0 30px;
+    }
+}
+
+.description {
+    font-size: 15px;
+    max-width: 660px;
+    line-height: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    @media screen and ( max-width: 600px ) {
+        font-size: 14px;
+    }
+    color: $font-warm;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: $dark-blue;
+    margin-top: -10px;
+    @media screen and ( max-width: 1015px ) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: 800px) {
+        font-size: 2.2rem;
+    }
+}
+
+.learnMoreButton {
+    @media screen and ( max-width: 600px ) {
+        display: none;
+    }
+}
+        
+
+    
+
+

@@ -1,0 +1,12 @@
+@import '../../styles/Variables.scss';
+
+.main {
+  height: 89vh;
+  min-height: $screen-min-height;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  @media screen and ( max-width: $container-halves-phone ) {
+    // min-height: 800px;
+  }
+}

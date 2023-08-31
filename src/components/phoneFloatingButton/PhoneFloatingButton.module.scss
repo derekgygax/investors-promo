@@ -1,0 +1,8 @@
+@import '../../styles/Variables.scss';
+
+
+.main {
+  @media screen and ( min-width: $container-halves-phone) {
+    display: none;
+  }
+}

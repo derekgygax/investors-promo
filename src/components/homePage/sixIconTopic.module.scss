@@ -1,0 +1,31 @@
+@use 'sass:math';
+@import '../../styles/Variables.scss';
+
+.dataContainer {
+  flex: 1 0 math.floor(calc(100 / 3)) * 1%;
+  
+  @media screen and ( max-width: $container-halves-phone) {
+    width: 100%;
+  }
+}
+
+.dataContainer:nth-child(n + 4) {
+  @media screen and ( min-width: $container-halves-phone) {
+    padding-top: 5vh
+  }
+}
+
+.dataInfoContainer {
+  width: 75%;
+  margin-left: 15px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  margin-top: 7px;
+}
+
+.sectionData {
+  padding-top: 7vh;
+}

@@ -1,0 +1,140 @@
+@import '../../styles/Variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Playfair+Display:700,900|Roboto:300,400,800');
+
+.active {
+    border-bottom: 2px solid $white;
+
+    &:hover {
+        opacity: 1 !important;
+    }
+}
+
+.container {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 100;
+    width: 600px;
+}
+
+.menuButton {
+    background-image: url("@assets/icons/menu-button.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    display: none;
+    height: 30px;
+    width: 30px;
+    @media screen and ( max-width: $container-halves-phone ) {
+        margin-right: 30px;
+    }
+}
+
+.menuNavbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menuNavbarLink {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 0;
+    margin: 0px 15px;
+    letter-spacing: 1px;
+    color: $white;
+    font-size: 15px;
+    font-weight: 700;
+    transition: opacity 0.25s ease;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    @media screen and ( max-width: $container-halves-phone ) {
+        font-size: 14px;
+    }
+
+    &:hover {
+        border-bottom: 2px solid $red;
+    }
+}
+
+@media screen and ( max-width: $container-halves-phone ) {
+    .active {
+        background-color: $red;
+        color: #ffffff;
+        border-bottom: none;
+    }
+
+    .hideMenu {
+        background-color: transparent;
+        border: none;
+        display: none;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 50vw;
+        z-index: 3;
+        transition: width 0.3s;
+
+        &.visible {
+            display: block;
+        }
+    }
+
+    .menu {
+        background-color: $dark-blue;
+        opacity: 0.95;
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0vw;
+        z-index: 2;
+        transition: width 0.3s;
+        padding-top: 100px;
+
+        &.visible {
+            display: flex;
+            width: 35vw;
+        }
+    }
+
+    .menuButton {
+        background-color: transparent;
+        cursor: pointer;
+        display: block;
+    }
+
+    .menuNavbar {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        margin: 0;
+        text-align: left;
+        width: 50vw;
+    }
+
+    .menuNavbarLink {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        padding-left: 20px;
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+}

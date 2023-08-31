@@ -1,0 +1,11 @@
+@import '../../styles/Variables.scss';
+    
+.error {
+    background: rgba(2, 36, 74, 1);
+    padding: 0 0 0 0;
+    z-index: 100;
+    position: relative;
+    @media screen and ( max-width: $container-halves-phone ) {
+        margin-bottom: 0;
+    }
+}

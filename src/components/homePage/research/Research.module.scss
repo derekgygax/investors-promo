@@ -1,0 +1,16 @@
+@import '../../../styles/Variables.scss';
+
+.backgroundColor {
+  background-color: $bg-light-dark-grey;
+}
+
+.topicHeader {
+  color: $font-light-grey;
+}
+
+.topicHeaderSpanish {
+  @media screen and ( min-width: $container-halves-phone) {
+    font-size: 7vw;
+    width: 65%;
+  }
+}

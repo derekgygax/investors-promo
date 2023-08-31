@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import '../../styles/Variables.scss';
+
+.backgroundBlue {
+    background: linear-gradient(0deg, #02244A 0%, rgba(0, 98, 250, 0.630556) 97.22%, rgba(0, 100, 255, 0.62) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding-top: 175px;
+    padding-bottom: 0;
+    height: 80vh;
+    min-height: 500px;
+
+    @media screen and (max-width: $container-halves-phone) {
+        height: 100vh;
+
+        @media screen and (max-height: $short-vertical-phone) {
+            padding-top: 100px;
+        }
+    }
+}
+
+.barLong {
+    background: $red;
+    height: 2px;
+    margin: 30px 0;
+    transition: width 1s;
+    width: 60px;
+}
+
+.button {
+    float: right;
+    background: transparent;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 30px;
+    text-transform: initial;
+    &:hover {
+        background-color: white;
+        color: grey;
+        border: 1px solid grey;
+    }
+}
+
+.buttons {
+    display: flex;
+    @media (max-width: $container-halves-phone) {
+        justify-content: center;
+    }
+    
+    span {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+.callButton {
+    min-width: 110px;
+}
+
+.containerSecond {
+    padding-top: 10vh;
+}
+
+.desktop {
+    @media screen and (max-width: $container-halves-phone) {
+       display: none;
+    }
+}
+
+.description {
+    font-size: 17px;
+    font-family: 'Open Sans';
+    line-height: 1.7;
+    max-width: 600px;
+    @media screen and (max-width: $container-halves-phone) {
+        font-size: 14px;
+    }
+}
+
+.header {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 5.5vw;
+    max-width: 700px;
+    color: $white;
+    @media screen and (max-width: $container-halves-phone) {
+        font-size: 50px;
+    }
+}
+
+.main {
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+
+.mobile {
+    @media screen and (min-width: $container-halves-phone) {
+        display: none;
+    }
+}

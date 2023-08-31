@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import '../../styles/Variables.scss';
+
+.description {
+    font-family: 'Open Sans';
+    font-size: 17px !important;
+    font-weight: 700;
+    line-height: 1.7;
+    max-width: 600px !important;
+    margin-bottom: 20px;
+    width: 90%;
+    @media screen and ( max-width: $container-halves-phone ) {
+        font-size: 14px !important;
+        width: 100%;
+    }
+}

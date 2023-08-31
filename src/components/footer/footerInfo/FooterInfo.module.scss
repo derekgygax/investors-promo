@@ -1,0 +1,95 @@
+@import '../../../styles/Variables.scss';
+
+
+
+.callUsButton {
+  background: $electric-blue;
+  border: none;
+  margin-right: 20px;
+  padding-top: 10px;
+  height: 43px;
+  border-radius: 30px;
+
+  &:hover {
+    border: none;
+  }
+}
+
+.callUsContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  @media screen and ( max-width: $container-halves-phone ) {
+    display: none;
+  }
+}
+
+.callUsWords {
+  padding-bottom: 10px;
+}
+
+.callUsWordsContainer {
+  padding-bottom: 5px;
+  margin-right: 70px;
+  @media screen and ( max-width: $container-halves-phone ) {
+    // margin-right: 35px;
+  }
+}
+
+.footerLogo {
+  height: 90px;
+  width: auto;
+  @media screen and ( max-width: $container-halves-phone ) {
+    padding-top: 3vh;
+    height: 13vh
+  }
+}
+
+.footerSlogan {
+  margin: 20px 0;
+  color: $white;
+  font-size: 15px;
+  font-family: 'Playfair Display';
+  font-family: 'Open Sans', sans-serif;
+  @media screen and ( max-width: $container-halves-phone ) {
+    font-size: 22px;
+  }
+}
+
+.footerTelephoneButton {
+  min-width: 0px;
+}
+
+.leftSide {
+  margin-right: 70px;
+  @media screen and ( max-width: $container-halves-phone ) {
+    margin-right: 0;
+    width: 50%
+  }
+}
+
+.rightSide {
+  @media screen and ( max-width: $container-halves-phone ) {
+    width: 50%
+  }
+}
+
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  @media screen and ( max-width: $container-halves-phone ) {
+    flex-wrap: nowrap;
+  }
+}
+
+.socialMediaIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.socialMediaIcons {
+  padding-top: 10px;
+}

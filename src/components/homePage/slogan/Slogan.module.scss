@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import '../../../styles/Variables.scss';
+
+.containerSecond {
+    margin-top: 40px;
+}
+
+.section {
+    padding-top: 50px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.sloganText {
+    font-family: 'Playfair Display';
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    @media screen and ( max-width: $container-halves-phone ) {
+        font-size: 45px;
+        margin-bottom: 20px;
+        width: 100%;
+
+        @media screen and ( max-height: $short-vertical-phone ) {
+            font-size: 35px;
+        }
+    }
+}
+
+.halfContainers {
+    width: 48%;
+    @media screen and ( max-width: $container-halves-phone ) {
+        margin: auto;
+        width: 100%
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../styles/Variables.scss';
+
+.discoverContent {
+    margin-top: 12px;
+}
+
+.home {
+    background: $white;
+    padding: 0 0 0 0;
+    z-index: 100;
+    position: relative;
+    @media screen and ( max-width: $container-halves-phone ) {
+        margin-bottom: 0;
+    }
+}
+
+.link {
+    text-decoration: underline;
+    color: $electric-blue;
+}

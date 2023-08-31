@@ -1,0 +1,48 @@
+@import '../../styles/Variables.scss';
+
+.backgroundImage {
+    background-image: url('@assets/home/hero.jpg');
+    background-repeat: no-repeat;
+}
+
+.desktop {
+    @media screen and ( max-width: $container-halves-phone ) {
+        display: none;
+    }
+}
+
+.home {
+    background: $white;
+    padding: 0 0 0 0;
+    z-index: 100;
+    position: relative;
+}
+
+.mobile {
+    @media screen and ( min-width: $container-halves-phone ) {
+        display: none
+    }
+}
+
+.sloganRetirement {
+    background-image: url(@assets/home/whitePattern.png);
+    background-color: #0064FF;
+    background-position: -5000% 17.5%;
+    background-size: 99%;
+    background-repeat: no-repeat;
+    @media screen and ( max-width: $container-halves-phone ) {
+        // background-position: 100% 17.5%;
+        padding-bottom: 50px;
+    }
+}
+
+.sloganPerformance {
+    background-image: url(@assets/home/whitePattern.png);
+    background-color: #001433;
+    background-size: 99%;
+    background-position: 5000% 17.5%;
+    background-repeat: no-repeat;
+    @media screen and ( max-width: $container-halves-phone ) {
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/Variables.scss';
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.disableScroll {
+  overflow-y: hidden;
+  max-height: 100vh;
+}
+
+.fullPage {
+  margin-bottom: 700px;
+
+  @media screen and (max-width: $container-havles-to-vertical) {
+    margin-bottom: 0;
+  }
+}
+

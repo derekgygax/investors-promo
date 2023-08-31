@@ -1,0 +1,83 @@
+@use 'sass:math';
+@import '../../../styles/Variables.scss';
+
+$icon-text-margin: 40px;
+
+.backgroundColor {
+  background-color: $bg-white;
+}
+
+.topicHeader {
+  color: $font-light-grey;
+}
+
+.topicHeaderSpanish {
+  @media screen and ( min-width: $container-halves-phone) {
+    font-size: 7vw;
+    width: 80%;
+  }
+}
+
+.dataContainer {
+  flex: 1 0 math.floor(calc(100 / 2)) * 1%;
+  
+  @media screen and ( max-width: $container-halves-phone) {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.dataContainer:nth-child(-n + 2) {
+  @media screen and ( min-width: $container-halves-phone) {
+    flex-direction: row-reverse;
+  }
+
+  .dataInfoContainer {
+    @media screen and ( min-width: $container-halves-phone) {
+      margin-right: $icon-text-margin;
+    }
+  }
+}
+
+.dataContainer:nth-child(n + 3) {
+  @media screen and ( min-width: $container-halves-phone) {
+    padding-top: 5vh;
+  }
+
+  .dataInfoContainer {
+    @media screen and ( min-width: $container-halves-phone) {
+      margin-left: $icon-text-margin;
+    }
+  }
+}
+
+.dataContainer:nth-child(odd) {
+  @media screen and ( min-width: $container-halves-phone) {
+    justify-content: left;
+  }
+}
+
+.dataContainer:nth-child(even) {
+  @media screen and ( min-width: $container-halves-phone) {
+    justify-content: right;
+  }
+}
+
+.dataInfoContainer {
+  width: 65%;
+  @media screen and ( max-width: $container-halves-phone) {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.icon {
+  @media screen and ( min-width: $container-halves-phone) {
+    width: 23%;
+  }
+
+  @media screen and ( max-width: $container-halves-phone) {
+    min-height: 150px;
+  }
+}

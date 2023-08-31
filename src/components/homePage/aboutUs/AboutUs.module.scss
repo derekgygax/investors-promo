@@ -1,0 +1,10 @@
+@use 'sass:math';
+@import '../../../styles/Variables.scss';
+
+.backgroundColor {
+  background-color: $bg-white;
+}
+
+.topicHeader {
+  color: $font-light-grey;
+}

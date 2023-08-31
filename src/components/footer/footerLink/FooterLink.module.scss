@@ -1,0 +1,21 @@
+@import '../../../styles/Variables.scss';
+
+.navLink {
+  text-decoration: none !important;
+  color: $white;
+  display: flex;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.navLink p {
+  text-decoration: none !important;
+  color: $white;
+  padding-bottom: 3px;
+  font-size: 1rem;
+  box-sizing: border-box;
+
+  &:hover {
+    border-bottom: 2px solid $red;
+  }
+}

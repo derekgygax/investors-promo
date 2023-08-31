@@ -1,0 +1,50 @@
+@import '../../styles/Variables.scss';
+
+.dataContainer {
+  width: 400px;
+  display: flex;
+  margin-left: 0;
+  margin-bottom: 15px;
+
+  @media screen and ( max-width: $container-halves-phone) {
+    margin-bottom: 20px !important;
+  }
+}
+
+.icon {
+  min-width: 55px;
+  min-height: 55px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.step {
+  text-transform: uppercase;
+  color: $electric-blue;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.text {
+  color: $font-warm;
+  text-align: left;
+  font-family: 'Open Sans';
+  line-height: 1.8rem;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: $font-warm;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Open Sans';
+  text-align: left;
+}
+
+.whyEquitiesProductsServices {
+  @media screen and ( min-width: $container-halves-phone) {
+    min-height: 125% !important;
+  }
+}

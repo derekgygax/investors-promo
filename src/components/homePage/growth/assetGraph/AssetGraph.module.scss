@@ -1,0 +1,80 @@
+@import '../../../../styles/Variables.scss';
+
+.chartContainer {
+    padding-top: 0 !important;
+    @media screen and ( min-width: $max-width ) {
+        margin: 0 auto;
+    }
+    @media screen and ( max-width: $container-halves-phone ) {
+        padding-left: 0px !important;
+        padding-right: -5px !important;
+        margin-right: 0px;
+    }
+}
+
+.displayNone {
+    display: none;
+}
+
+.highcharts-credits {
+    color: white !important;
+}
+
+.infographicCircle {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    width: 260px;
+    height: 260px;
+    border-radius: 160px;
+    background: $red;
+    margin-bottom: -300px;
+    margin-left: calc(50% - 160px);
+    padding-top: 70px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+
+    @media screen and ( max-width: $container-halves-phone ) {
+        margin-left: 10px;
+        margin-bottom: -200px;
+    }
+
+    p, h1 {
+        color: white;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Playfair Display';
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    &.blackText {
+        p, h1 {
+            color: $font-dark;
+        }
+    }
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    @media screen and ( min-width: $container-halves-phone ) {
+        padding-top: 10vh;
+    }
+}
+
+.headerContainer {
+    padding-bottom: 0 !important;
+    margin-bottom: 0px;
+    padding-top: 0 !important;
+    @media screen and ( max-width: $container-halves-phone ) {
+        display: none;
+    }
+}
+   

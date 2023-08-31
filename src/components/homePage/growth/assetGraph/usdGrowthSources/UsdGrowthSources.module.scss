@@ -1,0 +1,24 @@
+@import '../../../../../styles/Variables.scss';
+
+.description {
+  color: $dark-blue;
+}
+
+.main {
+  display: block;
+  margin-top: -1vh;
+  padding-bottom: 2vh;
+  @media screen and ( max-width: $container-halves-phone ) {
+    margin-top: 2vh;
+  }
+}
+
+.sourceButton {
+  color: $electric-blue;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.hideSources {
+  display: none;
+}

@@ -1,0 +1,28 @@
+@import './styles/Variables.scss';
+
+* {
+    @media screen and ( max-width: $container-halves-phone ) {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background-color: $electric-blue;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $white;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+button {
+    border: none;
+}
+
+

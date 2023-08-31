@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import '../../../../styles/Variables.scss';
+
+.bar {
+    width: 60px;
+    height: 2px;
+    background: $red;
+    margin: 30px auto 30px auto;
+}
+
+.benefit {
+    width: 370px;
+    margin-top: 30px;
+    // margin-right: 30px
+    margin-left: 30px;
+    margin-bottom: 15px;
+    @media screen and ( max-width: 940px ) {
+        margin-left: 0;
+    }
+        
+    // @media screen and ( max-width: 950px )
+    //     width: 300px
+    // @media (max-width: 680px)
+    //     margin-left: 0
+    //     width: 100%
+    //     display: flex
+    //     align-items: center
+    //     margin-bottom: 0
+    //     width: auto
+    //     margin-right: 0
+}
+
+.benefitIcon {
+    min-width: 250px;
+    width: 250px;
+    margin: 0 auto;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
+    // @media screen and ( max-width: 680px )
+    //     margin-right: 30px
+    // @media screen and ( max-width: 600px )
+    //     // margin-right: 20px
+    //     margin-bottom: 20px
+    //     width: 130px
+    //     height: 160px
+    //     min-width: 130px
+}
+
+.benefitName {
+    font-size: 1.3rem;
+    color: $font-warm;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.benefitText {
+    color: $font-warm;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8rem;
+    margin-top: 15px !important;
+    max-width: 370px;
+    margin: 0 auto;
+    font-size: 15px;
+    // @media (max-width: 680px)
+    //     text-align: left
+    @media screen and ( max-width: 940px ) {
+        margin-bottom: 20px;
+    }
+    @media screen and ( max-width: 600px ) {
+        padding-right: 0;
+        font-size: 14px;
+    }
+}
+
+.benefitTitle {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: $font-warm;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    // @media (max-width: 680px)
+    //     text-align: left
+    // @media screen and ( max-width: 600px )
+    //     margin-top: 0
+    //     font-size: 15px
+}
+
+.benefitsContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 30px auto 0 auto;
+    flex-wrap: wrap;
+    // @media screen and ( max-width: 850px )
+    //     justify-content: flex-start
+}
+
+.benefit:nth-child(3n) {
+    margin-right: 0;
+    // @media screen and ( max-width: 1160px )
+    //     margin-right: 30px
+}
+
+.bodyText {
+    font-size: 15px;
+    line-height: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 680px) {
+        text-align: left;
+    }
+    @media screen and ( max-width: 600px ) {
+        font-size: 14px;
+    }
+}
+
+.buttonSources span {
+    text-align: left !important;
+}
+
+.container {
+    height: auto;
+    padding: 0px 40px 100px 40px;
+    @media (max-width: 1280px) {
+        height: auto;
+    }
+    @media (max-width: 1150px) {
+        display: block;
+    }
+    @media (max-width: 680px) {
+        padding: 0 40px 100px 40px !important;
+    }
+    @media screen and ( max-width: 600px ) {
+        padding: 0 30px 40px 30px !important;
+    }
+}
+
+.description {
+    color: $font-warm;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8rem;
+    margin-top: 15px !important;
+}
+
+.header {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: $font-dark;
+    font-weight: 900;
+    text-align: center;
+    @media (max-width: 1280px) {
+        font-size: 2.5rem;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.main {
+    margin: 50px auto 0 auto;
+    padding: 0 0 0 0;
+    font-family: "Roboto", sans-serif;
+    background: $white;
+    transform: translateZ(0);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main, .main *::-webkit-scrollbar {
+    display: none;
+}
+
+.moreButton {
+    color: $electric-blue;
+    cursor: pointer;
+}
+
+.textContainer {
+    @media (max-width: 1280px) {
+        padding-right: 0;
+        padding-top: 0;
+    }
+}
+
+.textContainer p {
+    color: $font-warm;
+    font-family: "Open Sans", sans-serif;
+    line-height: 2rem;
+}

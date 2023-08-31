@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import '../../../styles/Variables.scss';
+
+.bar {
+    width: 60px;
+    height: 2px;
+    background: $white;
+    margin-bottom: 20px;
+}
+
+.barContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 4rem;
+    color: $white;
+}
+
+.main {
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subheader {
+    font-size: 1.5rem;
+    color: $white;
+}
+
+
+    
+
+

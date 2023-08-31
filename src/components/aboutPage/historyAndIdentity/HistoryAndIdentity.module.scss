@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import '../../../styles/Variables.scss';
+
+.aboutImage {
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    background-image: url('@assets/about/christina.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    border-radius: 5px;
+    margin-right: 100px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    @media screen and ( max-width: 1200px ) {
+        margin-right: 50px;
+    }
+    @media screen and ( max-width: 860px ) {
+        margin: 0 0 50px 0;
+        width: 325px;
+        height: 325px;
+    }
+    @media screen and ( max-width: 600px ) {
+        width: calc(100vw - 60px);
+        height: calc(100vw - 60px);
+    }
+}
+
+.aboutContainer {
+    display: flex;
+    margin-top: 50px;
+    @media screen and ( max-width: 860px ) {
+        display: block;
+    }
+}
+
+.aboutContainer div .spanSmall {
+    font-size: 15px;
+    color: $font-warm;
+    font-family: "Open Sans", sans-serif;
+    line-height: 2rem;
+    @media screen and ( max-width: 600px ) {
+        font-size: 14px;
+    }
+}
+
+.aboutContainer div .spanCaps {
+    font-family: 'Playfair Display';
+    font-size: 2.6rem;
+    position: relative;
+    color: $font-dark;
+    @media (max-width: 800px) {
+        font-size: 2.2rem;
+    }
+}
+
+.aboutContainer p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+    color: $font-dark;
+}
+
+.aboutDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barLong {
+    width: 0px;
+    height: 2px;
+    background: $red;
+    margin: 30px 0 0 0;
+    transition: width 1s;
+    display: none;
+
+    &.full {
+        width: 60px;
+    }
+}
+
+.button {
+    padding: 15px 30px 13px 30px;
+    border: 2px solid $dark-blue;
+    border-radius: 30px;
+    background-color: transparent;
+    transition-property: all;
+    transition-duration: 300ms;
+    font-family: "Open Sans";
+    color: $dark-blue;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.2, color 0.2;
+}
+
+.buttonContainer {
+    margin-top: 50px;
+}
+
+.container {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $max-width;
+    padding: 0 40px;
+    box-sizing: border-box;
+    @media screen and ( max-width: 1300px ) {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+
+.main {
+    margin: 0 auto;
+    padding: 70px 0 100px 0;
+    height: auto;
+    min-height: 35vh;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    transform: translateZ(0);
+    @media screen and ( max-width: 680px ) {
+        padding: 30px 0 60px 0;
+    }
+}
+
+.history {
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: 35vh;
+    max-width: 100%;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    @media screen and ( max-width: 680px ) {
+        margin-top: 0;
+    }
+}
+
+.history h1 {
+    font-size: 2.6rem;
+    position: relative;
+    z-index: 2;
+    width: 1100px;
+    max-width: 100%;
+    margin-top: 70px;
+    color: $dark-blue;
+    @media (max-width: 800px) {
+        font-size: 2.2rem;
+    }
+    @media screen and ( max-width: 680px ) {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}

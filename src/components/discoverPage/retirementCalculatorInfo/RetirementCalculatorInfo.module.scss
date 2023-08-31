@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import '../../../styles/Variables.scss';
+
+.barLong {
+    width: 0px;
+    height: 2px;
+    background: $red;
+    margin-top: 10px;
+    transition: width 1s;
+
+    &.full {
+        width: 60px;
+    }
+}
+
+.container {
+    display: flex;
+    height: auto;
+    padding: 0;
+    @media (max-width: 1280px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    @media (max-width: 1000px) {
+        align-items: center;
+    }
+    @media (max-width: 680px) {
+        display: block;
+        padding: 0;
+    }
+}
+
+.description {
+    font-size: 15px;
+    color: $font-warm !important;
+    max-width: 750px;
+    @media screen and ( max-width: 600px ) {
+        font-size: 14px;
+    }
+}
+
+.descriptionLink {
+    margin-left: 5px;
+}
+
+.formulaImg {
+    border: 1px solid black;
+
+    @media (max-width: 680px) {
+        width: 100%;
+    }
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-top: 10px;
+    color: $font-dark;
+    @media (max-width: 1280px) {
+        font-size: 2.5rem;
+    }
+    @media (max-width: 800px) {
+        margin-top: 30px;
+    }
+}
+
+.main {
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    @media (max-width: 760px) {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 460px) {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+}
+
+.subHeader {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-top: 60px;
+    color: $font-dark;
+    @media (max-width: 1280px) {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 800px) {
+        margin-top: 30px;
+    }
+}
+
+.textContainer {
+    width: 100%;
+}
+
+.textContainer p {
+    color: $font-dark;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+}

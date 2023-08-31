@@ -1,0 +1,43 @@
+@import '../../styles/Variables.scss';
+
+.dataContainer {
+  flex-direction: column;
+  margin-top: 0px;
+
+  @media screen and ( max-width: $container-halves-phone) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.dataContainer:nth-child(even) {
+  padding-top: 8vh;
+}
+
+.dataInfoContainer {
+  width: 90%;
+  margin-top: 20px;
+
+  @media screen and ( max-width: $container-halves-phone) {
+    width: 100%;
+  }
+}
+
+
+.icon {
+  min-height: 130px;
+
+  @media screen and ( min-width: $container-halves-phone) {
+    background-position: inherit;
+  }
+}
+
+.sectionDataContainer {
+  flex-wrap: nowrap;
+}
+
+.sectionData {
+  @media screen and ( max-width: $container-halves-phone) {
+    padding-top: 5vh;
+  }
+}

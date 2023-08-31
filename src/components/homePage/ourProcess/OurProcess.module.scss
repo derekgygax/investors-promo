@@ -1,0 +1,39 @@
+@import '../../../styles/Variables.scss';
+
+.backgroundColor {
+  background-color: $bg-light-grey;
+}
+
+// This stuff about data containers to VERY specific to the layout going on
+// in the component DataObjects and the pictures associated!!!
+// You NEED to monitor this on its own!!!
+// Look at how the words 'Step 2' and 'Step 4' align with eachother
+// and how the pic of the second one has to be bigger
+// ALSO in general the icon for STEPS is 130px so that is why you have 70px here
+// that is in stepsTopic.module.scss
+.dataContainer:last-child {
+  @media screen and ( min-width: $container-halves-phone) {
+    padding-top: 70px;
+  }
+}
+
+.dataContainer:nth-child(2) {
+  @media screen and ( min-width: $container-halves-phone) {
+    padding-top: 0;
+
+    div:nth-child(1) {
+      min-height: 200px !important;
+    }
+  }
+}
+
+.topicHeader {
+  color: $font-white;
+}
+
+.topicHeaderSpanish {
+  @media screen and ( min-width: $container-halves-phone) {
+    font-size: 6.1vw;
+    width: 62%;
+  }
+}

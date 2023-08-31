@@ -1,0 +1,51 @@
+@import '../../styles/Variables.scss';
+
+.container {
+    display: flex;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 999999;
+    width: 100%;
+    max-width: $max-width;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    @media screen and (max-width: $container-halves-phone) {
+        padding: 0;
+    }
+}
+
+.logo {
+    color: $white;
+    max-height: 180px;
+    display: flex;
+    align-items: center;
+    width: 175px;
+    @media screen and (max-width: $container-halves-phone) {
+        margin-left: 25px;
+    }
+}
+
+.section {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999999;
+    width: 100vw;
+
+    @media screen and (max-width: $container-halves-phone) {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+

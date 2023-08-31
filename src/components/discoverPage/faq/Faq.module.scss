@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import '../../../styles/Variables.scss';
+
+.main {
+    background: white;
+    color: $font-dark;
+}
+
+.answer {
+    font-size: 15px;
+    overflow: hidden;
+    height: 0;
+    transition: height 2s;
+    @media screen and ( max-width: 600px ) {
+        font-size: 14px;
+    }
+
+    &.visible {
+        height: auto;
+    }
+}
+
+.bar {
+    width: 60px;
+    height: 2px;
+    background: $red;
+    margin-top: 10px;
+}
+
+
+.container {
+    height: auto;
+    padding: 0;
+    @media (max-width: 1280px) {
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+    @media (max-width: 900px) {
+        padding: 30px;
+    }
+}
+
+.header {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin-top: 10px;
+    color: $font-dark;
+    @media (max-width: 1280px) {
+        font-size: 2.5rem;
+    }
+    @media (max-width: 800px) {
+        margin-top: 30px;
+    }
+}
+
+.textContainer {
+    width: 100%;
+}
+
+.textContainer p {
+    color: $font-dark;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8em;
+    font-size: 0.9rem;
+}
+
+.textContainer a {
+    color: $red !important;
+}
+
+.question {
+    font-family: 'Eina Semibold';
+    font-size: 2rem !important;
+    margin-top: 40px;
+    color: white;
+    @media (max-width: 1280px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 800px) {
+        margin-top: 30px;
+    }
+}
+    
+
+
